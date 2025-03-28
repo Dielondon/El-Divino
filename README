@@ -17,7 +17,7 @@ Este juego no perdona y solo los verdaderos sobrevivientes llegarán al final.
 
 ### 1. Clona el proyecto (cuando esté en GitHub)
 ```bash
-git clone https://github.com/tuusuario/el-divino.git
+git clone https://github.com/Dielondon/El-Divino.git
 cd el-divino
 2. Instala las dependencias
 bash
