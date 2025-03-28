@@ -5,31 +5,36 @@ Copiar
 Editar
 # 🍷 El Divino - Juego de Shots 🎲🔥
 
-**El Divino** es un juego de shots multijugador, hecho para prender la fiesta y que nadie quede sobrio.  
-Cada ronda es una locura: cartas aleatorias, desafíos, decisiones, animaciones...  
-Este juego no perdona y solo los verdaderos sobrevivientes llegarán al final.
+**El Divino** es un juego de shots multijugador, hecho para prenderse y que nadie quede sobrio.  
+Cada ronda es una chimba: cartas aleatorias, desafíos, decisiones, animaciones...  
+Dios perdona pero este juego no y solo los verdaderos decendiente de cauchoman llegarán al final.
 
-> 🎨 Diseñado y desarrollado por **LoiZ** con mucho estilo y muchas copas.
+> 🎨 Diseñado y desarrollado por **LoiZ S.A.** con mucho estilo y mucho sexo.
 
 ---
 
 ## 🚀 Cómo ejecutarlo
 
-### 1. Clona el proyecto (cuando esté en GitHub)
+### 1. Clona el proyecto
 ```bash
 git clone https://github.com/Dielondon/El-Divino.git
 cd el-divino
-2. Instala las dependencias
+
+### 2. Instala las dependencias
 bash
 Copiar
 Editar
 pip install -r requirements.txt
-3. Lanza el juego
+
+### 3. Lanza el juego
 bash
 Copiar
 Editar
 python app.py
-🧩 Características
+
+---
+
+## 🧩 Características
 Agrega jugadores (con validaciones)
 
 Generador de rondas automáticas con temporizador y sonidos
@@ -44,37 +49,27 @@ Estética dark, neón, medieval mágica
 
 Todo en una interfaz responsive y rápida
 
-📦 Requisitos
+
+## 📦 Requisitos
 Python 3.9+
 
 Navegador moderno
 
 Ganas de tomar
 
-🧪 Modo desarrollador
+## 🧪 Modo desarrollador
 bash
 Copiar
 Editar
 python app.py
 Abre automáticamente en tu navegador predeterminado.
 
-❤️ Créditos
-Hecho con 💜 por LoiZ
-Inspirado en todas esas noches que no recordamos.
+## ❤️ Créditos
+Hecho con 💜 por LondoñoRuiZ
+Inspirado en todas esas noches que nos embriagamos haciendo tesis de física de altas energías.
 
 yaml
 Copiar
 Editar
 
 ---
-
-## ✅ `requirements.txt`
-
-Aquí tienes el contenido sugerido:
-
-```txt
-dash==2.14.2
-dash-bootstrap-components==1.5.0
-pandas==2.2.1
-plotly==5.18.0
-Puedes pegarlo en un archivo llamado requirements.txt.
