@@ -279,3 +279,12 @@ audio {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+
+/* --- CARTAS EN COOLDOWN --- */
+.card-button-cooldown {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: grayscale(50%);
+}

@@ -40,19 +40,26 @@ def register_callbacks(app):
     @app.callback(
         Output('player-shot-list', 'children'),
         Input('store-players', 'data'),
-        Input('store-current-round-shots', 'data')  # 🔁 USAMOS LOS DE LA RONDA
+        Input('store-current-round-shots', 'data'),
+        Input('store-card-cooldowns', 'data')  # 👈 CAMBIADO a Input
     )
-    def update_game_tab_players(players, round_shots):
+    def update_game_tab_players(players, round_shots, cooldowns):
         if not players:
             return html.Div("Agrega jugadores primero.")
 
+        ahora = time.time()
         return html.Div([
             html.Div([
                 html.H4(f"{p} ({round_shots.get(p, 0)} shots)"),
-                html.Button("🎴 Usar carta", id={'type': 'use-card', 'index': p}, n_clicks=0),
+                html.Button(
+                    "🎴 Usar carta",
+                    id={'type': 'use-card', 'index': p},
+                    n_clicks=0,
+                    className='card-button-cooldown' if (ahora - cooldowns.get(p, 0)) < 300 else '',
+                    style={'margin': '8px'}
+                ),
             ], style={'margin': '10px'}) for p in players
         ])
-
 
 
 
