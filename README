@@ -1,0 +1,80 @@
+Aquí tienes el contenido actualizado:
+
+markdown
+Copiar
+Editar
+# 🍷 El Divino - Juego de Shots 🎲🔥
+
+**El Divino** es un juego de shots multijugador, hecho para prender la fiesta y que nadie quede sobrio.  
+Cada ronda es una locura: cartas aleatorias, desafíos, decisiones, animaciones...  
+Este juego no perdona y solo los verdaderos sobrevivientes llegarán al final.
+
+> 🎨 Diseñado y desarrollado por **LoiZ** con mucho estilo y muchas copas.
+
+---
+
+## 🚀 Cómo ejecutarlo
+
+### 1. Clona el proyecto (cuando esté en GitHub)
+```bash
+git clone https://github.com/tuusuario/el-divino.git
+cd el-divino
+2. Instala las dependencias
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+3. Lanza el juego
+bash
+Copiar
+Editar
+python app.py
+🧩 Características
+Agrega jugadores (con validaciones)
+
+Generador de rondas automáticas con temporizador y sonidos
+
+Cartas interactivas y mágicas con efectos visuales
+
+Sistema de cartas: poderes, decisiones y castigos
+
+Gráfica de shots con colores dinámicos
+
+Estética dark, neón, medieval mágica
+
+Todo en una interfaz responsive y rápida
+
+📦 Requisitos
+Python 3.9+
+
+Navegador moderno
+
+Ganas de tomar
+
+🧪 Modo desarrollador
+bash
+Copiar
+Editar
+python app.py
+Abre automáticamente en tu navegador predeterminado.
+
+❤️ Créditos
+Hecho con 💜 por LoiZ
+Inspirado en todas esas noches que no recordamos.
+
+yaml
+Copiar
+Editar
+
+---
+
+## ✅ `requirements.txt`
+
+Aquí tienes el contenido sugerido:
+
+```txt
+dash==2.14.2
+dash-bootstrap-components==1.5.0
+pandas==2.2.1
+plotly==5.18.0
+Puedes pegarlo en un archivo llamado requirements.txt.

@@ -1,0 +1,12 @@
+# === CORE DASH FRAMEWORK ===
+dash>=3.0.0                             # Framework principal para construir la app web
+dash_bootstrap_components==2.0.0        # Componentes visuales con estilo Bootstrap
+
+# === DATA HANDLING & VISUALIZATION ===
+pandas==2.2.3                           # Manipulación de datos tabulares
+plotly==6.0.0                           # Gráficos interactivos (barras, líneas, etc.)
+
+# === OPCIONAL (comentado, activar si los usás) ===
+# gunicorn==21.2.0                      # Servidor WSGI para despliegue en producción (Heroku, Render, etc.)
+# flask==3.0.3                          # Usado internamente por Dash (ya incluido normalmente)
+# numpy==1.26.4                         # Operaciones numéricas rápidas
