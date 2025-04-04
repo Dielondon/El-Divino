@@ -3,6 +3,21 @@ from layout import layout_tab_setup, layout_tab_game, layout_tab_stats
 from callbacks import register_callbacks
 import dash_bootstrap_components as dbc
 from dash import Input, Output, State, callback_context
+import socket
+
+
+
+def get_local_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        # No se conecta realmente, solo determina la IP saliente
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+    except Exception:
+        ip = "127.0.0.1"
+    finally:
+        s.close()
+    return ip
 
 app = Dash(
     __name__,
@@ -57,5 +72,6 @@ def toggle_tabs(tab):
 register_callbacks(app)
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=8050)
-
+    local_ip = get_local_ip()
+    print(f"Servidor iniciado en: http://{local_ip}:8050")
+    app.run_server(debug=True, host=local_ip)
